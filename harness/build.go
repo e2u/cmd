@@ -137,7 +137,8 @@ func Build(buildFlags ...string) (app *App, compileError *revel.Error) {
 			"-i",
 			"-ldflags", versionLinkerFlags,
 			"-tags", buildTags,
-			"-o", binName}
+			"-o", binName,
+            }
 
 		// Add in build flags
 		flags = append(flags, buildFlags...)

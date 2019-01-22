@@ -67,6 +67,7 @@ func buildMinifyApp(args []string) {
 		revel.RevelLog.Fatal("makedir error","error",err)
 	}
 
+
 	app, reverr := harness.Build()
 	panicOnError(reverr, "Failed to build")
 
